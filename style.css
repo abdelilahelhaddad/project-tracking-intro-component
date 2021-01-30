@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+button {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .container .shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 60vh;
+  border-radius: 0 0 0 4rem;
+  background-color: #eef3f6;
+  z-index: -99;
+}
+
+header .container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 0 5rem 0;
+}
+
+header .container .navbar .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container .navbar .list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1.5rem;
+}
+
+header .container .navbar .list li:last-child a:hover {
+  color: #a0a1ac;
+}
+
+header .container .navbar .list li a {
+  text-transform: uppercase;
+  color: #242942;
+  letter-spacing: 1px;
+}
+
+header .container .navbar .list li a:hover {
+  text-decoration: underline;
+}
+
+header .container .navbar .list li div {
+  width: 7px;
+  height: 7px;
+  background-color: #a0a1ac;
+  border-radius: 50%;
+  margin-top: 0.6rem;
+}
+
+header .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  margin-left: 6%;
+}
+
+header .main .content .label {
+  color: #a0a1ac;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header .main .content .label span {
+  padding: 2px 10px;
+  color: white;
+  background: #242942;
+  border-radius: 20px;
+  margin-right: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
+header .main .content h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+  color: #242942;
+  line-height: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+header .main .content p {
+  color: #5b5f71;
+}
+
+header .main .content .CTA {
+  padding-top: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .main .content .CTA button {
+  text-transform: uppercase;
+  color: white;
+  background-color: #ff5c5c;
+  border: none;
+  padding: 1rem 1.6rem;
+  border-radius: 5px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-right: 1.5rem;
+}
+
+header .main .content .CTA button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+header .main .content .CTA p {
+  color: #a0a1ac;
+  text-transform: uppercase;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .main .Illustration {
+  overflow-x: hidden;
+}
+
+header .main .Illustration img {
+  position: relative;
+  width: 135%;
+  right: -1.3rem;
+}
+/*# sourceMappingURL=style.css.map */

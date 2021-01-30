@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+$Red: hsl(0, 100%, 68%);
+$Very-Dark-Blue: hsl(230, 29%, 20%);
+$Dark-Grayish-Blue: hsl(230, 11%, 40%);
+$Grayish-Blue: hsl(231, 7%, 65%);
+$Light-Grayish-Blue: hsl(207, 33%, 95%);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+button {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+
+header {
+
+  .container {
+    flex-direction: column;
+
+    .shape {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 60vh;
+      border-radius: 0 0 0 4rem;
+      background-color: $Light-Grayish-Blue;
+      z-index: -99;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0 5rem 0;
+
+      .list {
+        display: flex;
+
+        li {
+          display: flex;
+          padding: 0 1.5rem;
+
+          &:last-child {
+            a:hover {
+              color: $Grayish-Blue;
+            }
+          }
+
+          a {
+            text-transform: uppercase;
+            color: $Very-Dark-Blue;
+            letter-spacing: 1px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+
+          }
+
+          div {
+            width: 7px;
+            height: 7px;
+            background-color: $Grayish-Blue;
+            border-radius: 50%;
+            margin-top: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    max-width: 100%;
+    margin-left: 6%;
+
+    .content {
+
+      .label {
+        color: $Grayish-Blue;
+        display: flex;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        span {
+          padding: 2px 10px;
+          color: white;
+          background: $Very-Dark-Blue;
+          border-radius: 20px;
+          margin-right: 1rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 0px;
+        }
+      }
+
+      h1 {
+        text-transform: uppercase;
+        font-size: 70px;
+        color: $Very-Dark-Blue;
+        line-height: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        color: $Dark-Grayish-Blue;
+      }
+
+      .CTA {
+        padding-top: 3.5rem;
+        display: flex;
+
+        button {
+          text-transform: uppercase;
+          color: white;
+          background-color: $Red;
+          border: none;
+          padding: 1rem 1.6rem;
+          border-radius: 5px;
+          font-size: 16px;
+          letter-spacing: 2px;
+          margin-right: 1.5rem;
+
+          &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+          }
+        }
+
+        p {
+          color: $Grayish-Blue;
+          text-transform: uppercase;
+          align-self: center;
+        }
+      }
+    }
+
+    .Illustration {
+      overflow-x: hidden;
+
+      img {
+        position: relative;
+        width: 135%;
+        right: -1.3rem;
+      }
+    }
+  }
+}
