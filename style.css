@@ -33,16 +33,13 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
+header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-header .container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -67,7 +64,11 @@ header .container .navbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 2rem 0 5rem 0;
+  margin-top: 1.5rem;
+}
+
+header .container .navbar .burger {
+  display: none;
 }
 
 header .container .navbar .list {
@@ -109,8 +110,17 @@ header .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%;
-  margin-left: 6%;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 6rem 0;
+}
+
+header .main .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 50%;
 }
 
 header .main .content .label {
@@ -119,7 +129,7 @@ header .main .content .label {
   display: -ms-flexbox;
   display: flex;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
 }
 
 header .main .content .label span {
@@ -151,6 +161,9 @@ header .main .content .CTA {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .main .content .CTA button {
@@ -176,15 +189,15 @@ header .main .content .CTA p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  letter-spacing: 5px;
 }
 
 header .main .Illustration {
-  overflow-x: hidden;
-}
-
-header .main .Illustration img {
-  position: relative;
-  width: 135%;
-  right: -1.3rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: url("./images/illustration-devices.svg") no-repeat -53% 100%/cover;
+  -webkit-transform: translateX(13%);
+          transform: translateX(13%);
 }
 /*# sourceMappingURL=style.css.map */
