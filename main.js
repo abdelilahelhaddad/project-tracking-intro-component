@@ -1,7 +1,6 @@
-const burger = document.querySelector(".burger");
-const iconBurger = document.querySelector(".icon-burger");
-const iconClose = document.querySelector(".icon-close");
+const burgerMenu = document.querySelector(".burger");
 
-burger.addEventListener("click", () => {
-  burger.classList.toggle("active");
+burgerMenu.addEventListener("click", (e)=>{
+  e.preventDefault();
+  burgerMenu.classList.toggle("active");
 });
