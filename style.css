@@ -269,6 +269,57 @@ header .main .Illustration {
     border-radius: 50%;
     margin-top: 0.6rem;
   }
+  header .container .navbar .list.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    background-color: #FFF;
+    width: 80%;
+    height: 34%;
+    z-index: 999;
+    margin-top: 5rem;
+    -webkit-box-shadow: -8px 8px 20px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: -8px 8px 20px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .container .navbar .list.active li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5rem 1.5rem;
+  }
+  header .container .navbar .list.active li:last-child a,
+  header .container .navbar .list.active li:last-child a:hover {
+    color: #a0a1ac;
+  }
+  header .container .navbar .list.active li a {
+    text-transform: uppercase;
+    color: #242942;
+    letter-spacing: 1px;
+    padding-bottom: .5rem;
+    font-weight: 700;
+  }
+  header .container .navbar .list.active li a:hover {
+    text-decoration: underline;
+  }
+  header .container .navbar .list.active li div {
+    width: 250px;
+    height: 2px;
+    background-color: #a0a1ac;
+    opacity: .3;
+    border-radius: 0;
+    margin-top: 0.6rem;
+  }
   header .main {
     display: -webkit-box;
     display: -ms-flexbox;

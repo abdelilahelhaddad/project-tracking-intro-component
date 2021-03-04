@@ -257,6 +257,54 @@ header {
             }
           }
         }
+
+        .list.active {
+          display: flex;
+          position: absolute;
+          background-color: #FFF;
+          width: 80%;
+          height: 34%;
+          z-index: 999;
+          margin-top: 5rem;
+          box-shadow: -8px 8px 20px 0px rgba($color: #000000, $alpha: 0.5);
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          li {
+            display: flex;
+            padding: .5rem 1.5rem;
+
+            &:last-child {
+
+              a,
+              a:hover {
+                color: $Grayish-Blue;
+              }
+            }
+
+            a {
+              text-transform: uppercase;
+              color: $Very-Dark-Blue;
+              letter-spacing: 1px;
+              padding-bottom: .5rem;
+              font-weight: 700;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+
+            div {
+              width: 250px;
+              height: 2px;
+              background-color: $Grayish-Blue;
+              opacity: .3;
+              border-radius: 0;
+              margin-top: 0.6rem;
+            }
+          }
+        }
       }
     }
 
