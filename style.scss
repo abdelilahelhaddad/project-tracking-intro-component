@@ -213,6 +213,18 @@ header {
           }
         }
 
+        .burger.active {
+          display: block;
+
+          .icon-burger {
+            display: none;
+          }
+
+          .icon-close {
+            display: block;
+          }
+        }
+
         .list {
           display: none;
 

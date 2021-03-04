@@ -233,6 +233,15 @@ header .main .Illustration {
   header .container .navbar .burger .icon-close {
     display: none;
   }
+  header .container .navbar .burger.active {
+    display: block;
+  }
+  header .container .navbar .burger.active .icon-burger {
+    display: none;
+  }
+  header .container .navbar .burger.active .icon-close {
+    display: block;
+  }
   header .container .navbar .list {
     display: none;
   }
